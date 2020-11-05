@@ -1,0 +1,61 @@
+@import './src/assets/scss/_variables.scss';
+@import './src/assets/scss/_mixins.scss';
+
+.nav-panel-container {
+    margin: 0;
+    font-family: $fontHalverita;
+
+    &__item {
+        @include flex;
+
+        width: 60%;
+        height: 30px;
+
+        padding: 10px;
+        border-radius: 8px;
+        margin-left: 10px;
+
+        &.first {
+            margin-top: 15px;
+        }
+
+        &.last {
+            margin-bottom: 10px;
+        }
+
+        &--image {
+            img {
+                width: 35px;
+                height: 35px;
+                margin-top: 5px;
+                border-radius: 50%;
+            }
+        }
+
+        &--icon {
+            @include flex;
+            justify-content: center;
+
+            height: 35px;
+            width: 35px;
+
+            background-color: $gray20;
+            border-radius: 50%;
+
+            color: $lightGray;
+            cursor: pointer;
+        }
+
+        &--name {
+            margin-left: 10px;
+            font-weight: 600;
+            color: $lightGray;
+            font-size: 15px;
+        }
+
+        &:hover {
+            background-color: $gray30;
+            transition: 0.2s;
+        }
+    }
+}

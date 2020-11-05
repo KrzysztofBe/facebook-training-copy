@@ -1,0 +1,21 @@
+@import './src/assets/scss/_variables.scss';
+@import './src/assets/scss/_mixins.scss';
+
+.container {
+    @include flex;
+
+    height: 100%;
+    background-color: #18191a;
+
+    &__navigation {
+        width: 30%;
+    }
+
+    &__main {
+        width: 40%;
+    }
+
+    &__chat {
+        width: 30%;
+    }
+}

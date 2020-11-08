@@ -2,18 +2,17 @@
 @import './src/assets/scss/_mixins.scss';
 
 .main-panel {
-    @include flex;
-
-    position: relative;
-
     font-family: $fontHalverita;
     width: 100%;
+
+    box-sizing: border-box;
 
     &__story {
         @include flex;
         margin-top: 20px;
         height: 200px;
         width: 100%;
+        position: relative;
 
         &--item {
             margin-right: 10px;
@@ -35,7 +34,7 @@
             height: 50px;
             width: 50px;
 
-            background-color: $gray30;
+            background-color: $gray10;
             border-radius: 50%;
 
             color: $lightGray;
@@ -45,5 +44,9 @@
         .last {
             margin-right: 25px;
         }
+    }
+
+    &__new-board-post {        
+        margin-top: 25px;
     }
 }

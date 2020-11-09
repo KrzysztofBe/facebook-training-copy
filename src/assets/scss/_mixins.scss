@@ -1,5 +1,12 @@
+@import 'variables';
+
 @mixin flex {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@mixin buttonHover {
+    background-color: $gray20;
+    transition: 0.2s;
 }

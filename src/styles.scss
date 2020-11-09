@@ -1,6 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'material-design-icons/iconfont/material-icons.css';
+@import './assets/scss/variables';
+@import './assets/scss/mixins';
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     margin: 0;
+    font-family: $fontHalverita;
+}
+
+.container {
+    &__left {
+        width: 30%;
+    }
+
+    &__middle {
+        width: 35%;
+    }
+
+    &__right {
+        width: 35%;
+        justify-content: flex-end;
+    }
+}
+
+.btn {
+    @include flex;
+
+    background: none;
+    outline: none;
+    border: none;
+
+    color: $lightGray;
+    cursor: pointer;
+
+    &__image {
+        img {
+            margin-top: 5px;
+            border-radius: 50%;
+        }
+
+        &--small {
+            img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        &--big {
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        &--bigger {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    &__label {
+        color: $lightGray;
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    &__icon {
+        @include flex;
+        justify-content: center;
+
+        height: 35px;
+        width: 35px;
+
+        background-color: $gray20;
+        border-radius: 50%;
+
+        color: $lightGray;
+        cursor: pointer;
+
+        &--last-story {
+            position: absolute;
+            right: 0;
+
+            transform: rotate(180deg);
+
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    &__with-icon {
+        width: 60%;
+        height: 50px;
+
+        padding: 10px;
+        border-radius: 8px;
+        margin-left: 10px;
+
+        &--first {
+            margin-top: 15px;
+        }
+
+        &--last {
+            margin-bottom: 10px;
+        }
+
+        &--small {
+            height: 35px;
+            margin-left: 35px;
+
+            padding: 0px 10px 0px 4px;
+            border-radius: 30px;
+
+            * {
+                cursor: pointer;
+            }
+
+            &:hover {
+                @include buttonHover;
+            }
+        }
+
+        &--centered {
+            margin-left: 0;
+            justify-content: center;
+        }
+
+        &:hover {
+            @include buttonHover;
+        }
+    }
+
+    &__nav {
+        justify-content: center;
+
+        &--big {
+            width: 20%;
+            height: 100%;
+            font-size: 30px;
+        }
+
+        &--small {
+            background-color: $gray20;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            margin-left: 15px;
+
+            &:hover {
+                @include buttonHover;
+            }
+        }
+    }
 }

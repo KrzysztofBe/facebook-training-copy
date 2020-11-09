@@ -1,50 +1,30 @@
-<div role="navigation" class="nav">
-    <div class="nav__left">
-        <div class="nav__left--image">
+<nav class="nav">
+    <div class="nav__container container__left">
+        <div class="nav__logo">
             <img src="./assets/img/fblogo.png" alt="fblogo">
         </div>
-        <div class="nav__left--search">
-            <i class="material-icons">search</i>
-            <input type="search" placeholder="Szukaj na Facebooku">
+        <div class="nav__search">
+            <i class="material-icons nav__icon">search</i>
+            <input class="nav__input" type="search" placeholder="Szukaj na Facebooku">
         </div>
     </div>
-    <div class="nav__center">
-        <a class="nav__center--item">
-            <i class="material-icons">home</i>
-        </a>
-        <a class="nav__center--item">
-            <i class="material-icons">people</i>
-        </a>
-        <a class="nav__center--item">
-            <i class="material-icons">live_tv</i>
-        </a>
-        <a class="nav__center--item">
-            <i class="material-icons">shopping_cart</i>
-        </a>
-        <a class="nav__center--item">
-            <i class="material-icons">groups</i>
-        </a>
+    <div class="nav__container container__middle">
+        <button class="btn btn__nav btn__nav--big material-icons">home</button>
+        <button class="btn btn__nav btn__nav--big material-icons">people</button>
+        <button class="btn btn__nav btn__nav--big material-icons">live_tv</button>
+        <button class="btn btn__nav btn__nav--big material-icons">shopping_cart</button>
+        <button class="btn btn__nav btn__nav--big material-icons">groups</button>
     </div>
-    <div class="nav__right">
-        <div class="nav__right--user">
-            <div class="nav__right--user-image">
+    <div class="nav__container container__right">
+        <button class="btn btn__with-icon--small">
+            <div class="btn__image btn__image--small">
                 <img src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/cp0/c22.0.40.40a/p40x40/78846700_1038090023194803_1966213329206640640_o.jpg?_nc_cat=100&ccb=2&_nc_sid=dbb9e7&_nc_ohc=xJt8RtSpl7UAX8RHliX&_nc_ht=scontent-waw1-1.xx&tp=27&oh=3c064b30c244db8770279a534a2addc2&oe=5FCAD134" alt="user photo"> 
             </div>
-            <div class="nav__right--user-name">
-                Krzysztof
-            </div>
-        </div>
-        <a class="nav__right--item">
-            <i class="material-icons">add</i>
-        </a>
-        <a class="nav__right--item">
-            <i class="material-icons">chat</i>
-        </a>
-        <a class="nav__right--item">
-            <i class="material-icons">notifications</i>
-        </a>
-        <a class="nav__right--item">
-            <i class="material-icons">keyboard_arrow_down</i>
-        </a>
+            <label class="btn__label">Krzysztof</label>
+        </button>
+        <button class="btn btn__nav btn__nav--small material-icons">add</button>
+        <button class="btn btn__nav btn__nav--small material-icons">chat</button>
+        <button class="btn btn__nav btn__nav--small material-icons">notifications</button>
+        <button class="btn btn__nav btn__nav--small material-icons">keyboard_arrow_down</button>
     </div>
-</div>
+</nav>
